@@ -1,0 +1,29 @@
+td{
+    
+    margin: 0px;
+    
+    padding: 0px;
+    width: 100px;
+    height: 50px;
+}
+tr{
+    margin: 10px;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.RED{
+    background-color: red;
+}
+.BLUE{
+    background-color: blue;
+}
+.GREEN{
+    background-color: green;
+}
+.YELLOW{
+    background-color: yellow;
+}
+

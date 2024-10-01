@@ -1,0 +1,26 @@
+.note {
+    background: orangered;
+    border-top-left-radius: 250px 4px;
+    border-bottom-left-radius: 12px 195px;
+    border-bottom-right-radius: 105px 23px;
+    width: 150px;
+    height: 150px;
+}
+
+.mainDiv {
+    height: 550px;
+    width: 70%;
+    background-color: rgb(103, 105, 107);
+    display: flex;
+    justify-content: center;
+    margin-left: -75px;
+    margin-top: 80px;
+}
+
+.nav{
+    margin-top: 15px;
+    height: 35px;
+    width: 700px;
+    background-color: rgb(201, 201, 201) ;
+    border-radius: 15px;
+}

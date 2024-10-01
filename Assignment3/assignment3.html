@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="video.css"/>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <table style="border: 2; border-collapse: collapse; color: black;">
+        <tr>
+            <td class="video">
+                <iframe width="560" height="315" style="margin-left: 20%;"
+                    src="https://www.youtube.com/embed/r2jOZzFjyXQ?si=ItJW3iboEj3Iz4sc" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </td>
+
+            <td style="margin-left: 20%;">
+                <form class="form">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="bdt">Birth Date:</label>
+                    <input type="date" id="bdt" name="bdt"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br><br>
+                    <div style="display: flex; gap: 10px;">
+                        <label for="address">Address:</label>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <select name="state" id="state">
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="UttarPradesh">UttarPradesh</option>
+                                <option value="MadhyaPradesh">MadhyaPradesh</option>
+                                <option value="Punjab">Punjab</option>
+                            </select>
+                            <b>State</b>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <select name="District" id="District">
+                                <option value="Pune">Pune</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Ahmedabad">Ahmedabad</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Patna">Patna</option>
+                            </select>
+                            <b>District</b>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <select name="city" id="city">
+                                <option value="Pune">Pune</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Ahmedabad">Ahmedabad</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Patna">Patna</option>
+                            </select>
+                            <b>City</b>
+                        </div>
+                        <br><br>
+
+                    </div>
+
+                    Gender:
+                    <input type="radio" name="gender" /> Female
+                    <input type="radio" name="gender" /> Male
+                    <input type="radio" name="gender" /> Other
+                    <br />
+                    <br />
+
+                    <div>
+                        <label for="photo">Upload Photo:</label>
+                        <input type="text" name="photo-upload" placeholder="Browse Your Photo" />
+                        <input type="file" id="myfile" name="myfile"><br><br>
+                    </div>
+
+
+                    <div style="display: flex;  align-items: center;">
+                        <label for="photo">Select Your Course:</label>
+                        <select name="course" id="course">
+                            <option value="PG-DAC">PG-DAC</option>
+                            <option value="PG-DMC">PG-DMC</option>
+                            <option value="PG-DITIS">PG-DITIS</option>
+
+                        </select>
+                    </div>
+
+                    <div class="submit">
+                        <input type="submit" value="Submit">
+                    </div>
+
+                    </div>
+                    </div>
+                </form>
+            </td>
+        </tr>
+
+
+
+
+
+
+    </table>
+</body>
+
+</html>
