@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+      <title>Document</title>
+</head>
+<body>
+    <img src="car.jpg" id="mycar" style="height:150px ; width:300px ; margin-top:30px ; position: absolute;">
+    <div style=" height: 5px; background-color: black; width: 800px;position: relative;top: 170px; ">
+    <br/><br/><br/> 
+    X Axis:<input type="number" style="margin-left:20px;" id="xaxis"><br/><br/>
+    Y Axis:<input type="number" style="margin-left:20px;"id="yaxis"><br/><br/><br/>
+    <input type="button" value="start" onclick="start()" style="margin-left: 30px;">
+    <input type="button" value="stop" onclick="stop()" style="margin-left: 40px;"> 
+    </div>
+    <br/>
+    <script>
+     L_margine =0;
+     T_margine =0;
+     var StartInterval;
+
+    function start(){
+        StartInterval=window.setInterval(StartName , 100);
+    }
+
+   function StartName(){
+    L_margine = L_margine + 10;
+    var refTomyCar = document.getElementById("mycar");
+    if (L_margine<810){
+      refTomyCar.style.marginLeft=L_margine+"px";
+
+      var refToxaxis=document.getElementById("xaxis");
+      refToxaxis.value=L_margine;
+    }
+    else{
+      if(T_margine<=450){
+        T_margine = T_margine+10;
+        refTomyCar.style.marginTop=T_margine+"px";
+
+        var refToyaxis=document.getElementById("yaxis");
+        refToyaxis.value=T_margine;
+      }
+    }
+
+   }
+   function stop(){
+    window.clearInterval(StartInterval)
+   }
+     
+     </script>
+</body>
+</html>
